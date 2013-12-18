@@ -11,12 +11,22 @@
         <div class="container">
             <div class="grid">
                 <div id="header" class="unit two-of-five">
-                    {% include header.html title="Hi!" subtitle="..." %}
+                    <h1>
+                        {{site.title}}
+                    </h1>
+                    
+                    <hr />
                 </div>
                 <div id="content" class="unit three-of-five">
-                    {{ content }} 
+                    <h2>
+                        {{page.title}}
+                    </h2>
+                    <p>
+                        {{ content }} 
+                    </p>
                 </div>
                 <div id="footer" class="unit span-grid">
+                    <hr />
                     {% include footer.html %}
                 </div>
             </div>
