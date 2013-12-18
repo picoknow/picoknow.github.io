@@ -8,8 +8,18 @@
         <link rel="stylesheet" type="text/css" src="/css/toast.css" />
     </head>
     <body>
-
-        {{ content }}
-
+        <div class="container">
+            <div class="grid">
+                <div id="header" class="unit two-of-five">
+                    {% include header.html title="Hi!" subtitle="..." %}
+                </div>
+                <div id="content" class="unit three-of-five">
+                    {{ content }} 
+                </div>
+                <div id="footer" class="unit span-grid">
+                    {% include footer.html %}
+                </div>
+            </div>
+        </div>
     </body>
 </html>
