@@ -2,6 +2,6 @@
 layout: clear
 title: collected css
 ---
-{% include css/style.css %}
-{% include css/tmp.css %}
-{% include css/toast.css %}
+{% include css/style.css | strip_newlines %}
+{% include css/tmp.css | strip_newlines %}
+{% include css/toast.css | strip_newlines %}
