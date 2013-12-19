@@ -28,9 +28,20 @@
                     <br />
                 </div>
                 <div id="content" class="unit three-of-five">
-                    <p>
+                    <h2 class="page-title">
+                        {{page.title}}
+                    </h2>
+                    <div class="page-meta">
+                        {% if page.user %}
+                            <span class="user">By <a href="http://github.com/{{page.user}}">{{page.user}}</a></span><br />    
+                        {% endif %}
+                        {% if page.short %}
+                            <span class="short">{{page.short}}</span>
+                        {% endif %}
+                    </div>
+                    <article class="page-content">
                         {{ content }} 
-                    </p>
+                    </article>
                 </div>
                 <div id="footer" class="unit span-grid">
                     <hr />
