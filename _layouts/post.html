@@ -2,7 +2,16 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h2 class="post-title">{{ page.title }}</h2>
+<p class="post-meta">
+    {% if page.user %}
+        <span class="user">By <a href="http://github.com/{{page.user}}">{{page.user}}</a></span><br />    
+    {% endif %}
+    {% if page.short %}
+        <span class="short">{{page.short}}</span>
+    {% endif %}
+</p>
+<br />
 
 {{ content }}
 

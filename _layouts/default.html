@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Add some meta -->
+        <title>{{ page.title }} - {{site.title}}</title>
         <meta charset="utf-8">
-        <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- SEO -->
+        <meta name="description" content="{% if page.short %}{{page.short}}{% elseif page.title %}{{page.title}}{% endif %}">
+        <meta name="keywords" content="{{page.tags}},americano,programming,language,spec,project,coffee">
+        <meta name="author" content="{{page.user}}">
+        <!-- Add some styles -->
+            <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
+            <!-- Layout Styles -->
         <link rel="stylesheet" type="text/css" href="/css/tmp.css" />
+            <!-- Grid Styles -->
         <link rel="stylesheet" type="text/css" href="/css/toast.css" />
     </head>
     <body>
