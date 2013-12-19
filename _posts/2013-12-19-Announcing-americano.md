@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  announcing-americano
+title:  announcing americano
 short:  Something new...
 user:   isaacrg
 ---
