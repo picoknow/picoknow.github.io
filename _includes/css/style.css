@@ -12,6 +12,15 @@ page-meta user{
 page-meta short{
  	font-style:italic;
 }
-/* Commence font styles */
-font: /*125%/1.5*/ Helvetica Neue, Helvetica, Open Sans, Arial, sans-serif;
+/*	Body */
+body {
+	font: Helvetica Neue, Helvetica, Open Sans, Arial, sans-serif;
+	color:#222;
+}
+/*	Font colo(u)r */
+a {
+	color:#D87A68;
+	font-weight:700;
+}
+
 /* END */
