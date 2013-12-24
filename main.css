@@ -1,7 +1,9 @@
 ---
 layout: clear
 title: collected css
+published: true
 ---
+
 {% include css/style.css %}
-{% include css/tmp.css %}
+/*{% include css/tmp.css %}*/
 {% include css/toast.css %}
