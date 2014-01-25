@@ -1,7 +1,7 @@
 americano-project.github.io
 ===========================
 
-![https://www.codeship.io/projects/acc1a0d0-6817-0131-8783-2a60fea31685/status?branch=master](Codeship)
+![Codeship Logo](https://www.codeship.io/projects/acc1a0d0-6817-0131-8783-2a60fea31685/status?branch=master)
 
 The website is at [americano-project.github.io](http://americano-project.github.io).
 Main developer for this website is [isaacrg](http://github.com/isaacrg).
