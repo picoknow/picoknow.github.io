@@ -1,6 +1,6 @@
 ---
 layout: default
 title: About
-short: About the americano project
+short: About Isaac Reid-Guest
 ---
-The americano project is the organisation managing and performing the development and the design of the americano programming language, with a view to rolling out the language at some point in the future. 
+I am a Programmer who works on cross-device soloutions, with an interest in the internet of things.
