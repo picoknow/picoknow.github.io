@@ -1,10 +1,10 @@
-americano-project.github.io
+isaacreidguest.bitbucket.org
 ===========================
 
 ![Codeship Logo](https://www.codeship.io/projects/acc1a0d0-6817-0131-8783-2a60fea31685/status?branch=master)
 
-The website is at [americano-project.github.io](http://americano-project.github.io).
-Main developer for this website is [isaacrg](http://github.com/isaacrg).
+The website is at [isaacreidguest.bitbucket.org](http://isaacreidguest.bitbucket.org).
+The maker of this website is(obviously) [isaacreidguest](http://bitbucket.org/isaacreidguest).
 
 ## Notes on web development
 The website was designed with a  _no_ use of javascript, or a similar scripting language, and all pages were processed by the Jekyll static site generator, albeit via the no-plugins github pages service.
