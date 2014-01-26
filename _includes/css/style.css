@@ -3,13 +3,13 @@ ul.menu{
     list-style:none;
 }
 /* Commence Page-Meta styles */
-page-meta{
+.page-meta{
 	font-style:underline;
 }
-page-meta user{
+.page-meta .user{
 	font-style:bold;
 }
-page-meta short{
+.page-meta .short{
  	font-style:italic;
 }
 /*	Body */
