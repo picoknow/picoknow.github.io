@@ -1,7 +1,7 @@
 isaacreidguest.bitbucket.org
 ===========================
 
-![Codeship Logo](https://www.codeship.io/projects/acc1a0d0-6817-0131-8783-2a60fea31685/status?branch=master)
+![Codeship Status icon](https://www.codeship.io/projects/acc1a0d0-6817-0131-8783-2a60fea31685/status?branch=master)
 
 - The website is at [isaacreidguest.bitbucket.org](http://isaacreidguest.bitbucket.org).
 - The maker of this website is [isaacreidguest](http://bitbucket.org/isaacreidguest).
