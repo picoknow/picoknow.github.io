@@ -5,4 +5,4 @@ short: About Isaac Reid-Guest
 ---
 I am a Programmer who works on cross-device soloutions, with an interest in the internet of things.
 
-_About the site...[here](site)._
+_About the site [here](site.html)._
