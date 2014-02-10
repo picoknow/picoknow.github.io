@@ -3,10 +3,10 @@ picoknow.bitbucket.org
 
 [ ![Codeship Status for picoknow/picoknow-jekyll](https://www.codeship.io/projects/b289c740-74b5-0131-8960-72dc6f10bff2/status?branch=master)](https://www.codeship.io/projects/13782)
 
-- The website is at [isaacreidguest.bitbucket.org](http://isaacreidguest.bitbucket.org).
+- The website is at [picoknow.bitbucket.org](http://picoknow.bitbucket.org).
 - The maker of this website is [isaacreidguest](http://bitbucket.org/isaacreidguest).
-- The uncompiled MD source is at [isaacreidguest-jekyll](http://bitbucket.org/isaacreidguest/isaacreidguest-jekyll).
-- The auto-compiled HTML source is at [isaacreidguest.bitbucket.org](http://bitbucket.org/isaacreidguest/isaacreidguest.bitbucket.org). 
+- The uncompiled MD source is at [picoknow-jekyll](http://bitbucket.org/picoknow/picoknow-jekyll).
+- The auto-compiled HTML source is at [picoknow.bitbucket.org](http://bitbucket.org/picoknow/picoknow.bitbucket.org). 
 
 ## Notes on web development
 
