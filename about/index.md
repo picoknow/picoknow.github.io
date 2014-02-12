@@ -1,8 +1,9 @@
 ---
 layout: default
 title: About
-short: About Isaac Reid-Guest
+short: About PicoKnow
 ---
-I am a Programmer who works on cross-device soloutions, with an interest in the internet of things.
+PicoKnow is an educashun site.
+
 
 _About the site [here](site.html)._
