@@ -1,0 +1,321 @@
+
+<!-- Written by Hari Shankar Das-->
+<!-- Published by www.funbutlearn.com -->
+<!-- Dynamic Quiz Creator V1.0 -->
+<style type="text/css">
+.unselected{
+	-moz-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	box-shadow:inset 0px 1px 0px -50px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+	background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #949494;
+	display:block;
+	color:#303030;
+	font-family:'Trebuchet MS',Helvetica,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px;
+	text-decoration:none;
+    cursor:pointer;
+	margin-bottom:10px;
+	text-align:center
+}.unselected:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #125da3), color-stop(1, #1b82d1) );
+	background:-moz-linear-gradient( center top, #125da3 5%, #1b82d1 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#125da3', endColorstr='#1b82d1');
+	background-color:#125da3;
+	border:1px solid #145ba6;
+	display:block;
+	color:#ffffff;
+}
+.normalButton{
+	-moz-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	box-shadow:inset 0px 1px 0px -50px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #125da3), color-stop(1, #1b82d1) );
+	background:-moz-linear-gradient( center top, #125da3 5%, #1b82d1 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#125da3', endColorstr='#1b82d1');
+	background-color:#125da3;
+	border:1px solid #145ba6;
+	display:block;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	color:#ffffff;
+	font-family:'Trebuchet MS',Helvetica,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px;
+	text-decoration:none;
+	text-align:center;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+
+.wrongAnswer{
+	-moz-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	box-shadow:inset 0px 1px 0px -50px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff3b62), color-stop(1, #cc024c) );
+	background:-moz-linear-gradient( center top, #ff3b62 5%, #cc024c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3b62', endColorstr='#cc024c');
+	background-color:#ff3b62;
+	border:1px solid #c7063d;
+	display:block;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	margin-bottom:10px;
+	cursor:pointer;
+	text-align:center;
+}
+
+.correctAnswer{
+	-moz-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	box-shadow:inset 0px 1px 0px -50px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #22ad0c), color-stop(1, #126114) );
+	background:-moz-linear-gradient( center top, #22ad0c 5%, #126114 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22ad0c', endColorstr='#126114');
+	background-color:#22ad0c;
+	border:1px solid #1f9423;
+	display:block;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	margin-bottom:10px;
+	cursor:pointer;
+	text-align:center;
+}
+
+.afterSelect {
+	-moz-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px -50px #ffffff;
+	box-shadow:inset 0px 1px 0px -50px #ffffff;
+	background-color:#e6e6e6;
+	border:1px solid #adabad;
+	display:block;
+	color:#969696;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	margin-bottom:10px;
+	text-align:center;
+	
+}
+
+.statusMessage{
+	text-align:center;
+	font-family:'Trebuchet MS',Helvetica,sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	display:none;
+}
+#outerQuizContainer{
+	margin-left:20px;
+	margin-right:20px;
+}
+#innerQuizContainer{
+	border:1px solid #D9D9D9;
+	background-color:#F2F4F5;
+	padding:5px 10px 5px 10px;
+	border-radius:7px;
+}
+#totalScore{
+	text-align:center;
+	margin-top:19px;
+	font-family:'Trebuchet MS',Helvetica,sans-serif;
+	font-weight:bold;
+	font-size:23px;
+	display:none;
+}
+#proceeding, #totalCorrectAnswers{
+	text-align:right;
+	font-family:'Trebuchet MS',Helvetica,sans-serif;
+	font-weight:bold;
+}
+#questionTitle{
+	font-family:'Trebuchet MS',Helvetica,sans-serif;
+	font-weight:bold;
+	margin-bottom:15px;
+	font-size:19px;
+}
+#countDown{
+	text-align:right;
+	font-family:'Trebuchet MS',Helvetica,sans-serif;
+	font-weight:bold;
+}
+</style>
+<script>
+    var MAX_TIME = {{page.maxtime}}; // Please provide time in seconds
+	var timer;
+	function countDown(){
+		MAX_TIME=MAX_TIME-1;
+		var timeRemain = pad(Math.floor((MAX_TIME/3600)))+" : "+pad(Math.floor((MAX_TIME%3600)/60))+" : "+pad(Math.floor((MAX_TIME%3600)%60));
+		document.getElementById("countDown").innerHTML=timeRemain;
+		if(MAX_TIME<=0){
+			window.clearInterval(timer);
+			document.getElementById("questionPanel").style.display="none";
+			document.getElementById("totalScore").style.display="block";
+			document.getElementById("flipQuestion").style.display="none";
+			document.getElementById("totalScore").innerHTML= "Total Score "+totalCorrect+" out of "+response.feed.entry.length;
+			document.getElementById("correctMessage").style.display="none";
+			document.getElementById("wrongMessage").style.display="none";
+		}
+	}
+	function pad(n){return n<10 ? '0'+n : n}
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript">
+    var currentQuestion=0;
+	var totalCorrect=0;
+	var totalWrong=0;
+	var response;
+	function getReply(data) { //Get data from Google Spreadsheet in JSON
+		response=data;
+	}
+</script>
+<script src="https://spreadsheets.google.com/feeds/list/{{page.key}}/od6/public/values?alt=json-in-script&callback=getReply"></script>
+<script>
+	var isAnswered=false;
+	$(document).ready(function(){
+	  $("#flipQuestion").click(function(){
+		$("#questionPanel").slideToggle("medium");
+		if(response.feed.entry.length!=currentQuestion){
+			var t=setTimeout(slideDown,200);
+		}
+		t=setTimeout(loadNewQuestion,250);
+	  });
+	});
+	function slideDown(){
+		$("#questionPanel").slideToggle("medium");
+	}
+	function beginQuiz(startButton){
+		timer=window.setInterval("countDown()",1000);
+		startButton.style.display="none";
+		document.getElementById("questionPanel").style.display="block";
+		document.getElementById("outerQuizContainer").style.height="380px";
+		loadNewQuestion();
+	}
+	function resetAllFields(){
+		document.getElementById("wrongMessage").style.display="none";
+		document.getElementById("correctMessage").style.display="none";
+		document.getElementById("optiona").className="unselected";
+		document.getElementById("optionb").className="unselected";
+		document.getElementById("optionc").className="unselected";
+		document.getElementById("optiond").className="unselected";
+		document.getElementById("optiona").style.display="block";
+		document.getElementById("optionb").style.display="block";
+		document.getElementById("optionc").style.display="block";
+		document.getElementById("optiond").style.display="block";
+		isAnswered=false;		
+	}
+	function loadNewQuestion(){
+		resetAllFields();
+		if(response.feed.entry.length==currentQuestion){
+			document.getElementById("questionPanel").style.display="none";
+			document.getElementById("totalScore").style.display="block";
+			document.getElementById("flipQuestion").style.display="none";
+			document.getElementById("totalScore").innerHTML= "Total Score "+totalCorrect+" out of "+response.feed.entry.length;
+		}
+		else{
+			document.getElementById("questionTitle").innerHTML=response.feed.entry[currentQuestion].gsx$question.$t;
+			if(response.feed.entry[currentQuestion].gsx$optiona.$t!=""){
+				document.getElementById("optiona").innerHTML=response.feed.entry[currentQuestion].gsx$optiona.$t;
+			}else{document.getElementById("optiona").style.display="none";}
+			
+			if(response.feed.entry[currentQuestion].gsx$optionb.$t!=""){
+				document.getElementById("optionb").innerHTML=response.feed.entry[currentQuestion].gsx$optionb.$t;				
+			}else{document.getElementById("optionb").style.display="none";}
+			
+			if(response.feed.entry[currentQuestion].gsx$optionc.$t!=""){
+				document.getElementById("optionc").innerHTML=response.feed.entry[currentQuestion].gsx$optionc.$t;
+			}else{document.getElementById("optionc").style.display="none";}
+			
+			if(response.feed.entry[currentQuestion].gsx$optiond.$t!=""){
+				document.getElementById("optiond").innerHTML=response.feed.entry[currentQuestion].gsx$optiond.$t;	
+			}else{document.getElementById("optiond").style.display="none";}
+			
+			document.getElementById("proceeding").innerHTML="Question "+(currentQuestion+1)+"/"+response.feed.entry.length;
+			document.getElementById("totalCorrectAnswers").innerHTML=totalCorrect+" correct answers";
+			document.getElementById("flipQuestion").style.display="none";
+			currentQuestion++;
+		}
+	}
+	function selectAnswer(button,option){	//Invoked when user click on any answer options    
+		if(!isAnswered){
+				document.getElementById("flipQuestion").style.display="inline";		
+				button.className='normalButton';
+				isAnswered=true;
+						
+				document.getElementById("optiona").className="afterSelect";
+				document.getElementById("optionb").className="afterSelect";
+				document.getElementById("optionc").className="afterSelect";
+				document.getElementById("optiond").className="afterSelect";
+				
+				if(response.feed.entry[currentQuestion-1].gsx$answer.$t==option){
+					totalCorrect++;
+					button.className='correctAnswer';
+					document.getElementById("correctMessage").style.display="block";
+				}	
+				else{
+					totalWrong++;
+					button.className='wrongAnswer';
+					document.getElementById("wrongMessage").style.display="block";
+				}	
+				document.getElementById("option"+response.feed.entry[currentQuestion-1].gsx$answer.$t).className="correctAnswer";
+				document.getElementById("totalCorrectAnswers").innerHTML=totalCorrect+" correct answers";
+		}	
+	}
+</script>
+
+</body>
+<div id="outerQuizContainer">
+	<div id="innerQuizContainer">
+	    <div style="text-align:center;margin-top:19px">
+		<div onClick="beginQuiz(this);" class="normalButton" style="padding:8px 20px 8px 20px; display:inline;">Start Quiz</div>
+		</div>
+		
+		<div id="totalScore">Total Score</div>
+				
+		<div id="questionPanel" style="display:none;">
+			<div id="proceeding">Question</div>
+			<div id="totalCorrectAnswers"></div>
+			<div id="countDown"></div>
+			<div id="questionTitle">Question</div>
+ 			<div id="optiona" onClick="selectAnswer(this,'a')" class="unselected">Option a</div>
+			<div id="optionb" onClick="selectAnswer(this,'b')" class="unselected">Option b</div>
+			<div id="optionc" onClick="selectAnswer(this,'c')" class="unselected">Option c</div>
+			<div id="optiond" onClick="selectAnswer(this,'d')" class="unselected">Option d</div>
+		</div>                     
+		<div style="text-align:right;margin:30px 0px 10px 0px;">
+			<div class="statusMessage"style="color:green" id="correctMessage">Yippee this is correct</div>
+			<div class="statusMessage"style="color:#F72362" id="wrongMessage">Oops you are wrong</div>
+			<div id="flipQuestion" class="normalButton" style="padding:3px 20px 3px 20px; display:none;">Next</div>
+		</div>
+	</div>
+</div>
