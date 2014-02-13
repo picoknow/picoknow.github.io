@@ -4,18 +4,26 @@ title: Home
 searchignore: true
 ---
 <input class="search" id="input" autofocus="autofocus"/>
-<ul class="list">
-    {% for page in site.pages %}
-    {% unless searchignore == true %}
-     <li>
-        <a href="{{ site.url }}{{ page.url }}">
-            <span class="name">{{page.title}}</span>
-            <small class="description">{{page.description}}</small>
-        </a>
-     </li>
-     {% endunless %}
-     {% endfor %}
-</ul>
+<div class="pages">
+    <ul class="list">
+        {% for page in site.pages %}
+        {% unless searchignore == true %}
+         <li>
+            <a href="{{ site.url }}{{ page.url }}">
+                <strong class="name">{{page.title}}</strong>
+                <small class="description">{{page.description}}</small>
+            </a>
+         </li>
+         {% endunless %}
+         {% endfor %}
+    </ul>
+</div>
 <script>
-    {% include js/search-list.js %}
+    {% include js/list.min.js %}
+</script>
+<script>
+    var options = {
+      valueNames: [ 'name', 'born' ]
+    };
+    var userList = new List('users', options);
 </script>
