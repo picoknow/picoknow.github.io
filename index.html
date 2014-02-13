@@ -3,22 +3,19 @@ layout: default
 title: Home
 searchignore: true
 ---
-<div id="example-list">
-    <input class="search" id="input" autofocus="autofocus"/>
-    <ul class="list">
-        {% for page in site.pages %}
-        {% unless searchignore == true %}
-        <li>
-            <a href="{{ site.url }}{{ page.url }}">
-                <span class="name">{{page.title}}</span>
-                <small class="description">{{page.description}}</small>
-            </a>
-        </li>
-        {% endunless %}
-        {% endfor %}
-    </ul>
-</div>
-
+<input class="search" id="input" autofocus="autofocus"/>
+<ul class="list">
+    {% for page in site.pages %}
+    {% unless searchignore == true %}
+     <li>
+        <a href="{{ site.url }}{{ page.url }}">
+            <span class="name">{{page.title}}</span>
+            <small class="description">{{page.description}}</small>
+        </a>
+     </li>
+     {% endunless %}
+     {% endfor %}
+</ul>
 <script>
     {% include js/search-list.js %}
 </script>
