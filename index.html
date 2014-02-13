@@ -1,12 +1,24 @@
 ---
 layout: default
-title: Home
+title: Page list and search
+searchignore: true
 ---
-<ul>
-{% for post in site.posts %}
-<li>
-    {{ post.date | date: "%B %e, %Y" }}
-    <a href="{{ post.url }}">{{ post.title }}</a>
-</li>
-{% endfor %}
-</ul>
+<div id="example-list">
+    <input class="search" />
+    <ul class="list">
+        {% for page in site.pages %}
+        {% unless searchignore == true %}
+        <li>
+            <a href="{{ site.url }}{{ page.url }}">
+                <span class="name">{{page.title}}</span>
+                <small class="description">{{page.description}}</small>
+            </a>
+        </li>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    {% include js/search-list.js %}
+</script>
