@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Page list and search
+title: Home
 searchignore: true
 ---
 <div id="example-list">
-    <input class="search" />
+    <input class="search" id="input" autofocus="autofocus"/>
     <ul class="list">
         {% for page in site.pages %}
         {% unless searchignore == true %}

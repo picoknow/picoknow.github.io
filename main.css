@@ -2,6 +2,7 @@
 layout: clear
 title: collected css
 published: true
+searchignore: true
 ---
 
 {% include css/style.css %}

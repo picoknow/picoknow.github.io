@@ -2,6 +2,7 @@
 layout: default
 title: About site
 short: About the site.
+searchignore: true
 ---
 - The website is at [isaacreidguest.bitbucket.org](http://isaacreidguest.bitbucket.org).
 - The maker of this website is [isaacreidguest](http://bitbucket.org/isaacreidguest).

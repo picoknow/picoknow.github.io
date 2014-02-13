@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Test Quiz
 layout: quiz
 # Max time in seconds
 maxtime: 600
