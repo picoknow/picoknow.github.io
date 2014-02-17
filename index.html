@@ -3,6 +3,21 @@ layout: default
 title: Home
 searchignore: true
 ---
+
+<script>
+  (function() {
+    var cx = '008618238231238324717:csk_b9kyugq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+<!--
 <div id="example-list">
     <input class="search" id="input" autofocus="autofocus"/>
     <ul class="list">
@@ -21,4 +36,4 @@ searchignore: true
 
 <script>
     {% include js/search-list.js %}
-</script>
+</script>-->
