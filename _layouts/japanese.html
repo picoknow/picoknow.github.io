@@ -1,0 +1,61 @@
+<html>
+    <head><title>{{page.title}}</title></head>
+    <body>
+        <link rel="stylesheet" href="http://purecss.io/css/layouts/side-menu.css" />
+        <script src="/JS/ahah.js"></script>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css" />
+        <script src="http://yui.yahooapis.com/3.14.1/build/yui/yui-min.js"></script>
+        <style>
+            #backButton {
+                position:fixed;
+                bottom:0px;
+                right:0px;
+            }
+            
+            #cont {
+                position:relative;
+                width:60%;
+                left:0%;
+                right:0%;
+            }
+            
+            body {
+                background-color:#eeeecc;
+            }
+        </style>
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div id="menu">
+                <div class="pure-menu pure-menu-open">
+                 <a class="pure-menu-heading">Deepschool</a>
+
+                <ul>
+                    <li id="MLi"><a href="javascript:ahah('/Maths/home.htm','cont');">Maths</a></li>
+                    <li id="PLi"><a id="P">Physics</a></li>
+                    <li id="CLi"><a id="C">Chemistry</a></li>
+                    <li id="BLi"><a id="B">Biology</a></li>
+                    <li id="Gli"><a id="G">Geography</a></li>
+                    <li id="SLi"><a id="S">Systems</a></li>
+                    <li class="menu-item-divided" id="ELi">
+                        <a id="E">Experiments</a>
+                    </li>
+                    <li id="ULi"><a id="U">Super User</a></li>
+                    <li id="GaLi"><a id="Ga">Games</a></li>
+                    <li id="BlLI"><a id="Bl">Blog</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="main">
+            <div class="header"><h1>{{page.heading}}</h1><h2>{{page.sub}}</h2></div>
+            <center><div class="content" id="cont">{{page.content}}</div></center>
+            <img src="image.png" id="backButton" title="Image Courtesy of SevenElevenStudios"/>
+        </div>
+
+        <script src="http://purecss.io/js/ui.js" > </script>
+    </body>
+</html>
