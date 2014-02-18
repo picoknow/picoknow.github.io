@@ -23,17 +23,12 @@
             body {
                 background-color:#eeeecc;
             }
-            @media (min-width:650px){
-            body { 
+            body{
                 background-image:url(/images/background.png);
+                background-size: 150px Auto;
                 background-repeat:no-repeat;
                 background-attachment:fixed;
                 background-position:bottom right;
-                
-            }
-            #backButton{
-                display: none;
-            }
             }
         </style>
         <div id="layout">
@@ -66,7 +61,7 @@
         <div id="main">
             <div class="header"><h1>{{page.heading}}</h1><h2>{{page.sub}}</h2></div>
             <center><div class="content" id="cont">{{page.content}}</div></center>
-            <img src="/images/background.png" id="backButton" title="Image Courtesy of SevenElevenStudios"/>
+            <!--<img src="/images/background.png" id="backButton" title="Image Courtesy of SevenElevenStudios"/>-->
         </div>
 
         <script src="http://purecss.io/js/ui.js" > </script>
