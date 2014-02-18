@@ -1,4 +1,5 @@
 ---
+title: Test
 ---
 [
 	{% for post in site.posts %}
