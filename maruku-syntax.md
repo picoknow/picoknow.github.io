@@ -1,3 +1,7 @@
+---
+title: Maruku Syntax
+layout:default
+---
 Markdown: Syntax
 ================
 
