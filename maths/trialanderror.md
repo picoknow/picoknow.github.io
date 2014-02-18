@@ -25,13 +25,13 @@ short:  A method of finding values of X without using the quadratic formula, com
    
  2. Pick a value that may work. You don't need to be too accurate. Let's try 5.
     
-   Trial | Calculation         | Value | High/Low
-   x = 5 | (5*x*5)+5 = 25 + 5  |  30   | High
-
- 3. 5 was too Big, lets try 4.
-   x = 4 |  (4*4)+4 = 16 + 4 =|  20   | Low
-
-4. That Means that *x lies between 4 & 5* Let's try 4.4
+   Trial | Calculation         | Value | High/Low   |
+   ------|---------------------|-------|------------|
+   x = 5 | (5*x*5)+5 = 25 + 5  |  30   | High       |
+   x = 4 | (4*x*4)+4 = 16 + 4  |  20   | Low        |
+ 
+ 3. 5 was too Big, so we tried 4.
+ 4. That Means that *x lies between 4 & 5* Let's try 4.4
 
 **We'll complete the question from here.**
 
