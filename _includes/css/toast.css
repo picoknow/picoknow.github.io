@@ -142,7 +142,7 @@ hr {
 \*-----------------------------------*/
 
 html {
-        font: 125%/1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+        font: 100%/1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 @media screen and (max-width: 650px) {
