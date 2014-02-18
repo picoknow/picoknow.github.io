@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Practice - Trial and Improvement</title>
+        <style>
+						#answer {
+								display:none;
+						}
+				</style>
+		</head>
+		<body>
+					<h1>Practice</h1>
+					<h2>Trial and Improvement</h2>
+					  <span  id="question">Your question will appear here.</span>
+					  <button onclick="nextQuestion()"> New question</button>
+					  
+					<h2>The answer:</h2>  
+					<span  id="answer">No answers will appear here.</span>
+					<button onclick="showAnswer()">Show the answer</button>
+					<script>
+					       var questionSpan = document.getElementById("question");
+					       var answerSpan = document.getElementById("answer");
+					       var numOne;
+					       var dp;
+					       var equations = ["x<sup>5</sup>","&pi; x<sup>2</sup>","x<sup>3</sup> + 2x","2 &pi; x","x<sup>2</sup> + x", "4x<sup>2</sup> - 6x"];
+					       var questionString; 
+					       var answerString;
+					        function nextQuestion()  {
+					            answerSpan.style.display = "none";
+					            numOne = Math.floor(Math.random()*1000);
+					            dp = Math.floor(Math.random()*3);
+					            numThree = Math.floor(Math.random()*equations.length-1);
+					               
+					            questionString = equations[numThree+1] + " = " + numOne + ". Find the value of x to " + dp + " decimal places.";
+					            questionSpan.innerHTML = questionString;
+					            console.log(numOne);
+					            console.log(dp);
+		                 console.log(numThree);
+		                 console.log(questionString);
+					        }
+					        
+					        function showAnswer()   {
+					               answerSpan.style.display  = "block";
+                }
+					</script>
+		</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+		<head>
+		    <title>Practice - Expanding Brackets</title>
+				<style>
+						#answer {
+								display:none;
+						}
+				</style>
+		</head>
+		<body>
+					<h1>Practice</h1>
+					<h2>Expanding Brackets</h2>
+					  <span  id="question">Your question will appear here.</span>
+					  <button onclick="nextQuestion()"> New question</button>
+					  
+					<h2>The answer:</h2>  
+					<span  id="answer">The answer will appear here.</span>
+					<button onclick="showAnswer()">Show the answer</button>
+					<script>
+					       var questionSpan = document.getElementById("question");
+					       var answerSpan = document.getElementById("answer");
+					       var numOne;
+					       var numTwo;
+					       var numThree;
+					       var numFour;
+					       var questionString;
+					       var answerString;
+					        function nextQuestion()  {
+					               answerSpan.style.display = "none";
+					               numOne = Math.floor(Math.random()*10);
+					               numTwo = Math.floor(Math.random()*10);
+					               numThree = Math.floor(Math.random()*10);
+					               numFour = Math.floor(Math.random()*10);
+					               questionString = "Expand: (" + numOne + "x + "  + numTwo + ")(" + numThree + "x +" + numFour + ")";
+					               
+					                questionSpan.innerHTML = questionString;
+					                
+					                answerString = (numOne * numThree) + "x <sup>2</sup> + " + ((numOne * numFour) + (numTwo * numThree)) + "x + " + (numTwo * numFour); 
+					                answerSpan.innerHTML = answerString;
+					        }
+					        
+					        function showAnswer()   {
+					               answerSpan.style.display  = "block";
+                       }
+					</script>
+		</body>
+</html>
