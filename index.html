@@ -32,8 +32,12 @@ searchignore: true
         {% endunless %}
         {% endfor %}
     </ul>
-</div>
-
+</div>-->
+<form method="get" action="http://www.google.com/search">
+<input type="text" name="q" size="25" maxlength="255" value="" />
+<input type="hidden" name="sitesearch" value="picoknow.bitbucket.org" />
+<input type="submit" value="Search website" />
+</form>
 <script>
     {% include js/search-list.js %}
 </script>-->
