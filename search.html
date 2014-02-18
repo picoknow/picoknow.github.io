@@ -2,6 +2,30 @@
 title: search
 searchignore:true
 ---
-<input type="text" class="search-field" placeholder="Search for articles (e.g. type 'Jekyll')">
-<div class="results"></div>
-<script src="jekyll-search.js"></script>
+<div id="results">
+  <h1><!-- `key` listing for `value` --></h1>
+
+  <ul class="results">
+    <!-- results lists -->
+  </ul>
+</div>
+<script>
+    var map = {
+      'category' : getParam('category'),
+      'tags'     : getParam('tags')
+    };
+
+    $.each(map, function(type, value) {
+      if (value !== null) {
+        $.getJSON('/search.json', function(data) {
+          posts = filterPostsByPropertyValue(data, type, value);
+          if (posts.length === 0) {
+            // Display 'no results found' or similar here
+            noResultsPage();
+          } else {
+            layoutResultsPage(type, value, posts);
+          }
+        });
+      }
+    });
+</script><script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
