@@ -1,31 +1,17 @@
 ---
 title: search
-searchignore:true
+searchignore: true
+layout: default
 ---
-<div id="results">
-  <h1><!-- `key` listing for `value` --></h1>
+<input type="text" class="search" placeholder="Search for articles (e.g. type 'Jekyll')">
+<div class="results"></div>
+ 
+<script type="text/javascript" src="/assets/js/jekyll-search.js"></script>
 
-  <ul class="results">
-    <!-- results lists -->
-  </ul>
-</div>
+<!--
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script> 
 <script>
-    var map = {
-      'category' : getParam('category'),
-      'tags'     : getParam('tags')
-    };
-
-    $.each(map, function(type, value) {
-      if (value !== null) {
-        $.getJSON('/search.json', function(data) {
-          posts = filterPostsByPropertyValue(data, type, value);
-          if (posts.length === 0) {
-            // Display 'no results found' or similar here
-            noResultsPage();
-          } else {
-            layoutResultsPage(type, value, posts);
-          }
-        });
-      }
+    $(document).ready(function() {
+        $('.search-field').simpleJekyllSearch();
     });
-</script><script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</script>-->
