@@ -26,7 +26,7 @@ a {
 /* END */
 body{
     background-image:url(/images/background.png);
-    background-size: 150px Auto;
+    background-size: 200px Auto;
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:bottom right;
@@ -59,4 +59,8 @@ body{
 	background: #999;
 	color: #fff;
 	border-radius: 5px;
+}
+/* Header  */
+h1 span{
+    font-size: 75%;
 }
