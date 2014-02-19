@@ -1,5 +1,6 @@
 ---
 title: Computer Data Representation
+layout: default
 ---
 # Computing
 
