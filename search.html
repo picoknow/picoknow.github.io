@@ -3,7 +3,22 @@ title: search
 searchignore: true
 layout: default
 ---
-<input type="text" class="search" placeholder="Search for articles (e.g. type 'Jekyll')">
+<div id="example-list">
+    <input class="search" />
+    <ul class="list">
+	{% for page in site.pages %}
+	{% if page.sitemapignore == null %}
+	  <li><a href="{{ site.url }}{{ page.url }}">
+			<span class="name">{{page.title}}</span>
+			<small class="description">{{page.description}}</small>
+	  </a></li>
+	{% endif %}
+  	{% endfor %}
+	</ul>
+</div>
+
+<script src="/assets/js/list.min.js"></script><script>{% include js/search-list.js %}</script>
+<!--<input type="text" class="search" placeholder="Search for articles (e.g. type 'Jekyll')">
 <div class="results"></div>
  
 <script type="text/javascript" src="/assets/js/jekyll-search.js"></script>
@@ -14,4 +29,4 @@ layout: default
     $(document).ready(function() {
         $('.search-field').simpleJekyllSearch();
     });
-</script>-->
+</script>-->-->
