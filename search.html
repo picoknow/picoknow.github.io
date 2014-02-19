@@ -3,7 +3,7 @@ title: search
 searchignore: true
 layout: default
 ---
-<div id="example-list">
+<div id="page-list">
     <input class="search" id="input"/>
     <ul class="list">
 	{% for page in site.pages %}
@@ -17,7 +17,14 @@ layout: default
 	</ul>
 </div>
 
-<script src="/assets/js/list.min.js"></script><script>{% include js/search-list.js %}</script>
+<script src="/assets/js/list.min.js"></script>
+<script>
+    var options = {
+      valueNames: [ 'name', 'description' ]
+    };
+var userList = new List('page-list', options);
+</script>
+<!--<script>{% include js/search-list.js %}</script>-->
 <!--<input type="text" class="search" placeholder="Search for articles (e.g. type 'Jekyll')">
 <div class="results"></div>
  
