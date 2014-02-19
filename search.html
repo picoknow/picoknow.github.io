@@ -7,12 +7,12 @@ layout: default
     <input class="search" id="input"/>
     <ul class="list">
 	{% for page in site.pages %}
-	{% if page.sitemapignore == null %}
+	{% unless page.sitemapignore == true %}
 	  <li><a href="{{ site.url }}{{ page.url }}">
 			<span class="name">{{page.title}}</span>
 			<small class="description">{{page.description}}</small>
 	  </a></li>
-	{% endif %}
+	{% endunless %}
   	{% endfor %}
 	</ul>
 </div>
