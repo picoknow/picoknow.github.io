@@ -25,7 +25,7 @@ a {
 
 /* END */
 body{
-    background-image:url(/images/background.png);
+    background-image:url(/assets/images/background.png);
     background-size: 200px Auto;
     background-repeat:no-repeat;
     background-attachment:fixed;
