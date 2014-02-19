@@ -2,12 +2,12 @@
 title: Test
 ---
 [
-	{% for post in site.posts %}
+	{% for page in site.pages %}
 		{
-		  "title"    : "{{ post.title | escape }}",
-		  "category" : "{{ post.category }}",
-		  "url"     : "{{ post.url }}",
-		  "date"     : "{{ post.date }}"
+		  "title"    : "{{ page.title | escape }}",
+		  "category" : "{{ page.category }}",
+		  "url"      : "{{ page.url }}",
+		  "date"     : "{{ page.date }}"
 		} {% if forloop.last %}{% else %},{% endif %}
 	{% endfor %}
 ]
