@@ -4,7 +4,7 @@ searchignore: true
 layout: default
 ---
 <div id="example-list">
-    <input class="search" />
+    <input class="search" id="input"/>
     <ul class="list">
 	{% for page in site.pages %}
 	{% if page.sitemapignore == null %}
