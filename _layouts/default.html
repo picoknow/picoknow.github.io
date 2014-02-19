@@ -19,25 +19,24 @@
     <body>
         <div class="container">
             <div class="grid">
-                <div id="header" class="unit one-of-five">
+                <div id="header" class="unit span-grid">
                     <h1>
                         {{site.title}}
                     </h1>
                     {% include menu.html %}
                     <br />
                 </div>
-                <div id="content" class="unit four-of-five">
-                    <h2 class="page-title">
-                        {{page.title}}
-                    </h2>
+                <div id="links" class="unit one-of-five">
                     <div class="page-meta">
-                        {% if page.user %}
-                            <ul class="user">By <a href="http://bitbucket.org/{{page.user}}">{{page.user}}</a></ul> 
-                        {% endif %}
+                        <!--{% if page.user %}
+                            <em class="user">By <a href="http://bitbucket.org/{{page.user}}">{{page.user}}</a></em> 
+                        {% endif %}-->
                         {% if page.short %}
-                            <ul class="short">{{page.short}}</ul>
+                            <p class="short">{{page.short}}</p>
                         {% endif %}
                     </div>
+                </div>
+                <div id="content" class="unit four-of-five">
                     <article class="page-content">
                         {{ content }} 
                     </article>
