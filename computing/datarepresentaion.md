@@ -2,13 +2,12 @@
 title: Computer Data Representation
 layout: default
 ---
-# Computing
 
 ## Data representation in computers
         
 Consider the Number 132, if we gave this number to a computer, it would convert it to BINARY (base 2)
 
-Binary is made up of Zeroes and Ones. Binary is usually represented in 8 bits, or digits, ![Binary Table](http://deepschool.kd.io/images/bintable_1.png).
+Binary is made up of Zeroes and Ones. Binary is usually represented in 8 bits, or digits, ![Binary Table](/assets/images/bintable_1.png).
 
 Large, isn't it? for simplicity we can use another format, Hexadecimal, or (Base 16).
 
