@@ -26,17 +26,7 @@
                     {% include menu.html %}
                     <br />
                 </div>
-                <div id="links" class="unit one-of-five">
-                    <div class="page-meta">
-                        <!--{% if page.user %}
-                            <em class="user">By <a href="http://bitbucket.org/{{page.user}}">{{page.user}}</a></em> 
-                        {% endif %}-->
-                        {% if page.short %}
-                            <p class="short">{{page.short}}</p>
-                        {% endif %}
-                    </div>
-                </div>
-                <div id="content" class="unit four-of-five">
+                <div id="content" class="unit span-grid">
                     <article class="page-content">
                         {{ content }} 
                     </article>
