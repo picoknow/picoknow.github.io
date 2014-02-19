@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>List.js example</title>
-    <style>li{margin-bottom:10px}span:hover{cursor:pointer;}</style>
-    <script src="/assets/js/list.min.js"></script>
-</head>
-<body>
+---
+title: Search-2
+layout: default
+searchignore: true
+sitemapignore: true
+---
 <div id="results">
     <input class="search" /><br />
     <ul class="list"></ul>
 </div>
+    <script src="/assets/js/list.min.js"></script>
     <script>
         var options = {
             item: '<li><h3 class="title"></h3><p class="short"></p></li>'
@@ -37,5 +36,3 @@
 
     var hackerList = new List('results', options, values);
     </script>
-</body>
-</html>
