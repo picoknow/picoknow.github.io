@@ -1,4 +1,9 @@
-# expandingbrackets #
+---
+layout: default
+title: Expanding Brackets
+heading: Expanding Brackets
+sub: Learn.
+---
 # Expanding Brackets 
 
 ## Things that you need to know: 
