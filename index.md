@@ -20,3 +20,4 @@ searchignore: true
 * [geography](/geography/)
 * [history](/history/)
 * [japanese](/japanese/)
+* [Latin](/latin/)
