@@ -1,0 +1,38 @@
+---
+title: Search-2
+layout: default
+searchignore: true
+sitemapignore: true
+---
+<div id="results">
+    <input class="search" /><br />
+    <ul class="list"></ul>
+</div>
+    <script src="/assets/js/list.min.js"></script>
+    <script>
+        var options = {
+            item: '<li><h3 class="title"></h3><p class="short"></p></li>'
+        };
+
+        var values = [
+             	{% for post in site.posts %}
+                    {
+                      "title"    : "{{ post.title | escape }}",
+                      "category" : "{{ post.category }}",
+                      "url"     : "{{ post.url }}",
+                      "date"     : "{{ post.date }}"
+                    },
+                {% endfor %}
+                {% for page in site.pages %}
+                    {
+                      "title"    : "{{ page.title | escape }}",
+                      "category" : "{{ page.category }}",
+                      "url"      : "{{ page.url }}",
+            {% if page.short %}"short":"{{page.short}}",{% endif %}
+                      "date"     : "{{ page.date }}"
+                    } {% if forloop.last %}{% else %},{% endif %}
+                {% endfor %}
+        ];
+
+    var hackerList = new List('results', options, values);
+    </script>
