@@ -14,8 +14,9 @@ searchignore: true
 </form>
 
 ## Subjects
-- [maths](maths/)
-- [computing](computing/)
-- [geography](geography/)
-- [history](history/)
-- [japanese](japanese/)
+- [Maths](maths/)
+- [Computing](computing/)
+- [Geography](geography/)
+- [History](history/)
+- [Japanese](japanese/)
+- [Latin](/latin/)
