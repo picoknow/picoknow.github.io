@@ -16,9 +16,9 @@ searchignore: true
 
 ## Subjects
 
-* [Maths](/maths/)
-* [Computing](/computing/)
-* [Geography](/geography/)
-* [History](/history/)
-* [Japanese](/japanese/)
-* [Latin](/latin/)
+- [Maths](maths/)
+- [Computing](computing/)
+- [Geography](geography/)
+- [History](history/)
+- [Japanese](japanese/)
+- [Latin](/latin/)
