@@ -1,5 +1,7 @@
 ---
 title: Test
+searchignore: true
+
 ---
 [
 	{% for post in site.posts %}
