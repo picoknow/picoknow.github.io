@@ -1,3 +1,8 @@
+---
+layout: default
+searchignore: true
+---
+
 picoknow.bitbucket.org
 ===========================
 
