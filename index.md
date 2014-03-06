@@ -16,7 +16,7 @@ searchignore: true
 
 ## Subjects
 
-- [Maths](maths/)
+- [AIDS](maths/)
 - [Computing](computing/)
 - [Geography](geography/)
 - [History](history/)
