@@ -28,7 +28,7 @@ sub: Learn. Practice. Master. Conquer!
             The HCF of 196 and 420 = 28
 
 ##LCM
-        The LCM of two numbers is the lowest multiple of both of the numbers. Suck on my cheesy knob.
+        The LCM of two numbers is the lowest multiple of both of the numbers.
 
 ###Worked Example
         Find the LCM of 96 and 120
