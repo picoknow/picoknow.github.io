@@ -6,7 +6,7 @@ searchignore: true
 picoknow.bitbucket.org
 ===========================
 
-[ ![Codeship Status for picoknow/picoknow-jekyll](https://www.codeship.io/projects/b289c740-74b5-0131-8960-72dc6f10bff2/status?branch=master)](https://www.codeship.io/projects/13782)
+[![Build Status](https://travis-ci.org/picoknow/picoknow.github.io.svg?branch=master)](https://travis-ci.org/picoknow/picoknow.github.io)
 
 - The website is at:
  - [picoknow.bitbucket.org](http://picoknow.bitbucket.org)
