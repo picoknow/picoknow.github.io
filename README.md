@@ -9,23 +9,13 @@ picoknow.bitbucket.org
 [![Build Status](https://travis-ci.org/picoknow/picoknow.github.io.svg?branch=master)](https://travis-ci.org/picoknow/picoknow.github.io)
 
 - The website is at:
- - [picoknow.bitbucket.org](http://picoknow.bitbucket.org)
  - [picoknow.github.io](http://picoknow.github.io)
-- The makers of this website are [isaacreidguest](http://bitbucket.org/isaacreidguest) and [ChilliByte](http://bitbucket.org/chillibyte).
-- The uncompiled MD source is at [picoknow-jekyll](http://bitbucket.org/picoknow/picoknow-jekyll).
-- The auto-compiled HTML source is at [picoknow.bitbucket.org](http://bitbucket.org/picoknow/picoknow.bitbucket.org). 
+- The makers of this website are [isaacrg](https://github.com/isaacrg) and [ChilliByte](http://github.com/chillibyte).
+- The uncompiled MD source is at [picoknow-jekyll](https://github.com/picoknow/picoknow.github.io).
 
 ## Notes on web development
 
 The website was designed with a  _no_ use of javascript, or a similar scripting language, and all pages were processed by the Jekyll static site generator, albeit via the no-plugins github pages service.
-
-### Automated Jekyll? How?
-
-I have used [Codeship](https://www.codeship.io) to automate the use of jekyll, via a series of shell commands. This means that I can provide a simple deployment, once setup.
-
-### Why No JS?
-
-JS has been avoided because it serves no function for this site, for which users would benefit from. javascript is frequently used unnecessarily, especially involving the use of JQuery. **Forget JQuery, code JS properly.** _And only use JS when absolutely necessary. (Or in a web app...)_
 
 ### Why not dynamic?
 
