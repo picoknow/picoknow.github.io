@@ -17,10 +17,6 @@ picoknow.bitbucket.org
 
 The website was designed with a  _no_ use of javascript, or a similar scripting language, and all pages were processed by the Jekyll static site generator, albeit via the no-plugins github pages service.
 
-### Why not dynamic?
-
-The site is less dependent on server speed, with a static site. This site is made for the fastest delivery possible. Okay?
-
 ## Notes on adding...
 
 ### ...blog posts
