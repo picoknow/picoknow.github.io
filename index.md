@@ -22,3 +22,4 @@ searchignore: true
 - [History](history/)
 - [Japanese](japanese/)
 - [Latin](/latin/)
+- [RS](/RS/)
