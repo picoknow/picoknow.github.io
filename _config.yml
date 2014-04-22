@@ -1,6 +1,6 @@
 title: PicoKnow
 pygments: true
-url: http://picoknow.bitbucket.org
-baseurl: http://picoknow.bitbucket.org
+url: http://picoknow.github.io
+baseurl: http://picoknow.github.io
 
 markdown: kramdown
