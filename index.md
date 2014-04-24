@@ -3,7 +3,7 @@ layout: default
 title: Home
 heading: Welcome to picoKnow!
 sub: Learn. Practice. Master. Conquer!
-content: Welcome to picoKnow. The site is currently under heavy development. please bear with us. 
+#content: Welcome to picoKnow. The site is currently under heavy development. please bear with us. 
 searchignore: true
 ---
 
